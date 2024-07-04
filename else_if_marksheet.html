@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    enter your mark : <input type="text" name="" id="mark">
+    <button onclick="valid1()">submit</button>
+
+    
+    <script>
+        function valid1()
+        {
+        a=Number(document.getElementById("mark").value);
+        //var a=50;
+        if(a>=90 && a<=100)
+        {
+            alert("Your grade is A")
+        }
+        else if(a>=80 && a<90)
+        {
+            alert("Your grade is B")
+        }
+        else if(a>=70 && a<80)
+        {
+            alert("Your grade is C")
+        }
+        else if(a>=60 && a<70)
+        {
+            alert("Your grade is D")
+        }
+        else if(a>100)
+        {
+            alert("Invalid")
+        }
+        else
+        {
+            alert("Failed")
+        }
+    }
+    </script>
+</body>
+</html>

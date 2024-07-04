@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="text" name="" id="txt1">
+    <button onclick="display()">click
+    </button>
+    <input type="text" name="" id="txt2">
+    <p id="demo"></p>
+    <script>
+        function display()
+        {
+            var a=document.getElementById("txt1").value
+           /* alert(a)*/
+           document.getElementById("txt2").value=a
+           document.getElementById("demo").innerHTML=a /*display value into p*/
+        }
+    </script>
+</body>
+</html>

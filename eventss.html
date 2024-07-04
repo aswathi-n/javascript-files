@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript events</title>
+</head>
+<body>
+    
+    enter your name : <input type="text" name="" id="txtname" onfocus="focusfunction()" onblur="blurFunction()">
+    <br>
+    <br>
+    <h1 id="mouse" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse</h1>
+    <br><br>
+    <body onload="window.alert('page successfully loaded')">
+        
+    </body>
+    <script>
+      function focusfunction()
+      {
+        document.getElementById("txtname").style.background="pink";
+      } 
+      function blurFunction()
+      {
+        document.getElementById("txtname").style.background="blue";
+      }
+      function mouseOver()
+      {
+        document.getElementById("mouse").style.color="red";
+      }
+      function mouseOut()
+      {
+        document.getElementById("mouse").style.color="yellow";
+      }
+    </script>
+</body>
+</html>

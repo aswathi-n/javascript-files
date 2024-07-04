@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter a number : <input type="text" name="" id="txtnum">
+    <button onclick="fact()">factorial</button>
+    <input type="text" name="" id="txtfact" style="width: 20%;">
+
+    <script>
+        function fact()
+        {
+        var fact=1,i;
+        n=Number(document.getElementById("txtnum").value);
+        for(i=1;i<=n;i++)
+        {
+           fact=fact*i;
+        }
+        document.getElementById("txtfact").value=fact;
+    }
+    </script>
+</body>
+</html>
